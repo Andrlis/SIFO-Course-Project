@@ -1,0 +1,76 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 7.453 ns
+From           : clk
+To             : CPU:inst|registers:inst2|lpm_dff1:inst4|lpm_ff:lpm_ff_component|dffs[11]
+From Clock     : --
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 22.043 ns
+From           : CPU:inst|stack:inst1|lpm_counter0:inst15|lpm_counter:lpm_counter_component|cntr_5dg:auto_generated|safe_q[0]
+To             : debug_CPUdata[3]
+From Clock     : clk
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 10.923 ns
+From           : clk
+To             : debug_command[3]
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -5.589 ns
+From           : clk
+To             : CPU:inst|registers:inst2|lpm_dff1:inst3|lpm_ff:lpm_ff_component|dffs[3]
+From Clock     : --
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 30.63 MHz ( period = 32.650 ns )
+From           : CPU:inst|stack:inst1|lpm_counter0:inst15|lpm_counter:lpm_counter_component|cntr_5dg:auto_generated|safe_q[0]
+To             : CPU:inst|registers:inst2|lpm_dff1:inst5|lpm_ff:lpm_ff_component|dffs[3]
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Clock Hold: 'clk'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : CPU:inst|CU:inst|lpm_add_sub3:inst15|lpm_add_sub:lpm_add_sub_component|add_sub_qmj:auto_generated|pipeline_dffe[6]
+To             : CPU:inst|CU:inst|SReg:inst|lpm_dff3:inst|lpm_ff:lpm_ff_component|dffs[6]
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 10000
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 10000
+
+--------------------------------------------------------------------------------------
+
